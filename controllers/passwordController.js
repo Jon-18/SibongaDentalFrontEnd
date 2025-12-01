@@ -32,7 +32,7 @@ export const forgotPassword = async (req, res) => {
 
 
     // FIXED LINK
-    const resetLink = `http://localhost:3000/reset-password/${token}`;
+    const resetLink = `https://clinicsibongaclinic.xyz/reset-password/${token}`;
 
     // Send email
     await transporter.sendMail({
