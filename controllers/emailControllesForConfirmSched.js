@@ -27,8 +27,8 @@ export const sendApprovalEmail = async (appt) => {
         <p>Your dental appointment has been approved.</p>
 
         <p>
-          <b>Date:</b> ${appt.Date}<br>
-          <b>Time:</b> ${appt.StartTime} - ${appt.endTime}<br>
+          <b>Date:</b> ${appt.date}<br>
+          <b>Time:</b> ${appt.startTime} - ${appt.endTime}<br>
           <b>Dentist:</b> ${appt.doctorName}
         </p>
 
