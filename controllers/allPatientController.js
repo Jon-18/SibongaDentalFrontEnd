@@ -7,7 +7,7 @@ export const getAllPatient = async (req, res) => {
     res.status(200).json(rows);
   } catch (err) {
     console.error("Error fetching branches:", err);
-    res.status(500).json({ message: "Server error" });
+    res.status(500).json({ message: "Server errorss" });
   }
 };
 
