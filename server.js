@@ -24,7 +24,6 @@ dotenv.config();
 const app = express();
 
 app.use(cookieParser());
-app.use(cors());
 app.use(express.json());
 
 app.use(cors({
@@ -50,6 +49,6 @@ app.use("/api/getAllAppointmentsRoutes", getAllAppointments);
 app.use("/api/getAllPatient", getAllPatient);
 app.use("/uploadsReceipt", express.static("uploadsReceipt"));
 
-const PORT = process.env.PORT || 5000;
+const PORT = "https://sibongadentalfrontend.onrender.com" || 5000;
 app.listen(PORT, () => {
 });
