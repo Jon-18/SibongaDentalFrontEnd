@@ -27,7 +27,10 @@ app.use(cookieParser());
 app.use(express.json());
 
 app.use(cors({
-  origin: "https://clinicsibongaclinic.xyz",
+  origin: [
+    "http://localhost:3000",
+    "https://clinicsibongaclinic.xyz",
+  ],
   credentials: true,
 }));
 
