@@ -23,6 +23,17 @@ dotenv.config();
 
 const app = express();
 
+const allowedOrigins = [
+  "https://clinicsibongaclinic.xyz",
+  "http://localhost:3000",
+];
+
+app.use(cors({
+  origin: allowedOrigins,
+  credentials: true,
+}));
+
+
 app.use(cookieParser());
 app.use(express.json());
 
@@ -49,6 +60,8 @@ app.use("/api/getAllAppointmentsRoutes", getAllAppointments);
 app.use("/api/getAllPatient", getAllPatient);
 app.use("/uploadsReceipt", express.static("uploadsReceipt"));
 
-const PORT = "https://sibongadentalfrontend.onrender.com" || 5000;
+const PORT = process.env.PORT || 5000;
+
 app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
 });
