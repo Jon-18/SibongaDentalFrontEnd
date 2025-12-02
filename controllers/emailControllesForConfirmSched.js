@@ -21,7 +21,7 @@ export const sendApprovalEmail = async (appt) => {
 
       <p>
         <b>Date:</b> ${appt.Date}<br>
-        <b>Time:</b> `${appt.StartTime} - ${appt.endTime}`<br>
+        <b>Time:</b> ${appt.StartTime} - ${appt.endTime}<br>
         <b>Dentist:</b> ${appt.doctorName}
       </p>
 
