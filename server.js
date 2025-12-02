@@ -49,7 +49,7 @@ app.use("/api/getAllAppointmentsRoutes", getAllAppointments);
 app.use("/api/getAllPatient", getAllPatient);
 app.use("/uploadsReceipt", express.static("uploadsReceipt"));
 
-const PORT = process.env.PORT || 5432;
+const PORT = process.env.PORT || 3306;
 
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
