@@ -11,7 +11,7 @@ export const sendApprovalEmail = async (appt) => {
     const emailData = {
       sender: {
         name: "Clinic Sibonga Dental",
-        email: process.env.SENDER_EMAIL
+        email: process.env.EMAIL_USER
       },
       to: [
         {
