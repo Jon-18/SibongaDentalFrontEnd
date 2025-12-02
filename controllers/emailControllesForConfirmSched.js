@@ -5,7 +5,7 @@ export const sendApprovalEmail = async (appt) => {
     const apiInstance = new Brevo.TransactionalEmailsApi();
     apiInstance.setApiKey(
       Brevo.TransactionalEmailsApiApiKeys.apiKey,
-      process.env.BREVO_API_KEY
+      process.env.EMAIL_PASS
     );
 
     const emailData = {
