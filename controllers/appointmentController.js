@@ -42,7 +42,7 @@ export const createAppointment = async (req, res) => {
     // Handle receipt file
     let receiptUrl = null;
     if (req.file) {
-      receiptUrl = `http://localhost:5000/uploadsReceipt/${req.file.filename}`;
+      receiptUrl = `https://sibongadentalfrontend.onrender.com/uploadsReceipt/${req.file.filename}`;
     }
 
     // SQL Insert
